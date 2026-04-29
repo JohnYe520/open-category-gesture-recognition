@@ -159,4 +159,4 @@ The game uses `up`, `down`, `left`, and `right` as battle inputs. The `stop`, `z
 - A webcam is required for data collection, realtime demo, and gameplay.
 - The GitHub version keeps `data/` as an empty placeholder folder because collected `.npy` samples can be large. The trained model can still be uploaded as `models/gesture_model.pkl`.
 - `game.py` expects `assets/pixel_characters.png` to exist.
-- If the model file is missing, run `python train_model.py` before starting the demo or game.
+- If the model file is missing, run `python collect_landmarks.py` to collect new date for each gesture, and then run `python train_model.py` before starting the demo or game.
